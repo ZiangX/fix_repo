@@ -5,7 +5,7 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
 
 import Hero from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
-import Features from "components/features/ThreeColWithSideImage.js";
+import FeaturesOld from "components/features/ThreeColWithSideImage.js";
 import MainFeature from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
 import FeatureStats from "components/features/ThreeColCenteredStatsPrimaryBackground.js";
 import Pricing from "components/pricing/TwoPlansWithDurationSwitcher.js";
@@ -14,6 +14,8 @@ import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js"
 import FAQ from "components/faqs/courseOutline";
 import GetStarted from "components/cta/GetStartedLight.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
+import Features from "components/features/VerticalWithAlternateImageAndText.js";
+
 
 const HighlightedText = tw.span`text-primary-500`
 
@@ -24,8 +26,9 @@ export default () => {
       <FAQ
         heading={<>Any <HighlightedText>Questions ?</HighlightedText></>}
       />
+      <Features />
       <FeatureStats/>
-      {/* <Features 
+      {/* <FeaturesOld
         heading={<>Amazing <HighlightedText>Features</HighlightedText></>}
       /> */}
       {/* <MainFeature
