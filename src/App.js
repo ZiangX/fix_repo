@@ -1,6 +1,6 @@
-import React from "react";
-import GlobalStyles from 'styles/GlobalStyles';
-import { css } from "styled-components/macro"; //eslint-disable-line
+import React from 'react'
+import GlobalStyles from 'styles/GlobalStyles'
+import { css } from 'styled-components/macro' //eslint-disable-line
 
 /*
  * This is the entry point component of this project. You can change the below exported default App component to any of
@@ -98,33 +98,33 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import ContactUsPage from "pages/ContactUs.js";
 // import BlogIndexPage from "pages/BlogIndex.js";
 // import TermsOfServicePage from "pages/TermsOfService.js";
-// import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
+import PrivacyPolicyPage from 'pages/PrivacyPolicy.js'
 
-import ComponentRenderer from "ComponentRenderer.js";
-import MainLandingPage from "MainLandingPage.js";
-import ThankYouPage from "ThankYouPage.js";
-import ServiceLandingPage from "demos/ServiceLandingPage";
+import ComponentRenderer from 'ComponentRenderer.js'
+import MainLandingPage from 'MainLandingPage.js'
+import ThankYouPage from 'ThankYouPage.js'
+import ServiceLandingPage from 'demos/ServiceLandingPage'
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 export default function App() {
-  // If you want to disable the animation just use the disabled `prop` like below on your page's component
-  // return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
+	// If you want to disable the animation just use the disabled `prop` like below on your page's component
+	// return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
 
-
-  return (
-    <>
-      <GlobalStyles />
-      <Router>
-        <Routes>
-          {/* <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
-          <Route path="/components/:type/:name" element={<ComponentRenderer />} />
-          <Route path="/thank-you" element={<ThankYouPage />} /> */}
-          <Route path="/" element={<ServiceLandingPage />} />
-        </Routes>
-      </Router>
-    </>
-  );
+	return (
+		<>
+			<GlobalStyles />
+			<Router>
+				<Routes>
+					{/* <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
+					<Route path='/components/:type/:name' element={<ComponentRenderer />} />
+        <Route path="/thank-you" element={<ThankYouPage />} /> */}
+					<Route path='/internship' element={<PrivacyPolicyPage />} />
+					<Route path='/' element={<ServiceLandingPage />} />
+				</Routes>
+			</Router>
+		</>
+	)
 }
 
 // export default EventLandingPage;
